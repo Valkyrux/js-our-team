@@ -30,3 +30,7 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+// seleziono il container per le card
+const container = document.querySelector(".team-container");
+// svuoto il contenuto del container per le card (non tocco l'HTML)
+container.innerHTML = "";
