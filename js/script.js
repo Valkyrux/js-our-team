@@ -70,3 +70,15 @@ function printCardByObjectArray(objectArray, DOMPosition) {
 }  
 // genero la pagina con l'oggetto dato
 printCardByObjectArray(team, container);
+// seleziono il bottone
+const button = document.getElementById("addMemberButton");
+// metto l'addEventlistener sul bottone
+button.addEventListener ("click", function () {
+    const addMemberName = document.getElementById("name").value;
+    const addMemberRole = document.getElementById("role").value;
+    const addMemberImage = document.getElementById("image").value;
+    const addedObject = {name: addMemberName, role: addMemberRole, image: addMemberImage};
+    team.push(addedObject);
+    printCardByObjectArray(team, container);  
+  }
+);
